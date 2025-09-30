@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../CSS folder/cart.css">
+</head>
+<body>
+    <header>
+        <h1>My Cart</h1>
+        <div class="cart-status">
+            Items in Cart: <span id="cart-count">0</span>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="menu">
+          <ul>
+            <li><a href="../html folder/homepage.html">Home</a></li>
+            <li><a href="../html folder/menu.html">Menu</a></li>
+            <li><a href="../html folder/about.html">About</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="empty-cart-message" style="display: none; text-align: center; margin-top: 20px;">
+            <p>Your cart is empty.</p>
+        </div>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-buttons">
+            <button id="clear-cart">Clear Cart</button>
+            <button id="checkout">Checkout</button>
+        </div>
+    </main>
+
+    <script src="../javascript folder/cart.js"></script>
+</body>
+</html>

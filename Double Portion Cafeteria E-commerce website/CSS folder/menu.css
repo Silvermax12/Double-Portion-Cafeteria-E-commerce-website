@@ -1,0 +1,265 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #8B5A2B;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  line-height: 1.6;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.logo h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: white;
+}
+
+.logo h4 {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  font-weight: 20;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.cart-container {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+
+.cart-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.cart-container a:hover {
+  transform: scale(1.05);
+}
+
+.cart-container a svg {
+  margin-right: 8px;
+  width: 28px;
+  height: 28px;
+  fill: #fff;
+}
+
+.cart-container a span#cart-count {
+  background-color: #7e3837;
+  color: #fff;
+  padding: 0px 4px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: -5px;
+  right: -15px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  width: 30px;
+  z-index: 100;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hamburger:hover {
+  transform: scale(1.05);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-list {
+  position: absolute;
+  top: 85px;
+  left: 20px;
+  background-color: rgb(244, 244, 244);
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  width: 220px;
+  display: none;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.menu-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list ul li {
+  padding: 12px 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-list ul li:hover {
+  transform: scale(1.1);
+}
+
+.menu-list ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(139, 90, 43);
+}
+
+.menu-list ul li a:hover {
+  background-color: rgb(196, 145, 119);
+  transform: scale(1.05);
+}
+
+#menu-toggle:checked ~ .menu-list {
+  display: flex;
+}
+
+.menu {
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menutopic {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.menuparagraph {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.menuitem {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.menuitem:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menuimage {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.menudetails {
+  padding: 15px;
+}
+
+.menudetails h3 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  color: rgb(139, 90, 43);
+}
+
+.menudetails p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.menudetails p span {
+  font-weight: bold;
+  color: rgb(139, 90, 43);
+}
+
+.add-to-cart {
+  background-color: rgb(139, 90, 43);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: rgb(120, 70, 30);
+  transform: scale(1.03);
+}
+
+footer {
+  background-color: rgb(139, 90, 43);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #fff;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    margin: 20px;
+  }
+  
+  .nav-toggle {
+    top: 20px;
+    left: 20px;
+  }
+  
+  .cart-container {
+    top: 20px;
+    right: 20px;
+  }
+}

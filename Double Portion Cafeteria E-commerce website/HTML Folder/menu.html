@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="../CSS folder/menu.css">
+</head>
+<body>
+  <header>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>    
+    <div class="logo">
+      <h1>DOUBLE PORTION CAFETERIA<br>
+        CATERING SERVICE LTD
+      </h1>
+      <h4> ...we give value for money</h4>
+    </div>
+
+    <div class="cart-container">
+      <a href="../html folder/cart.html">
+        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#fff">
+          <path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/>
+        </svg> 
+        Cart 
+        <span id="cart-count">0</span>
+      </a>
+    </div>
+
+    <nav class="menu-list">
+      <ul>
+        <li><a href="../html folder/homepage.html">Home</a></li>
+        <li><a href="../html folder/about.html">About</a></li>
+        <li><a href="../html folder/menu.html">Menu</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="menu">
+    <h2 class="menutopic">OUR MENU</h2>
+    <p class="menuparagraph">
+      Below is our menu, featuring a variety of freshly prepared dishes for you to enjoy.
+    </p>
+    
+    <div class="menu-items">
+      <div class="menuitem">
+        <img src="../image folder/yam.jpg" alt="Boiled Yam" class="menuimage">
+        <div class="menudetails">
+          <h3>Boiled Yam</h3>
+          <p>Indulge in the natural sweetness of freshly boiled yam</p>
+          <p><span>Price:</span> #100 per piece</p>
+          <button class="add-to-cart" data-name="Boiled Yam" data-price="100">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="menuitem">
+        <img src="../image folder/beans.jpg" alt="Ewa Agoyin" class="menuimage">
+        <div class="menudetails">
+          <h3>Ewa Agoyin</h3>
+          <p>Savor the rich flavors of steamed beans infused with aromatic spices</p>
+          <p><span>Price:</span> #250 per spoon</p>
+          <button class="add-to-cart" data-name="Ewa Agoyin" data-price="250">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/bread.jpg" alt="Bread" class="menuimage">
+        <div class="menudetails">
+          <h3>Bread</h3>
+          <p>Warm, fluffy, and freshly baked to perfection</p>
+          <p><span>Price:</span> #700 per loaf</p>
+          <button class="add-to-cart" data-name="Bread" data-price="700">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/white rice.jpg" alt="White Rice" class="menuimage">
+        <div class="menudetails">
+          <h3>White Rice</h3>
+          <p>A classic comfort food, served hot and plain</p>
+          <p><span>Price:</span> #200 per spoon</p>
+          <button class="add-to-cart" data-name="White Rice" data-price="200">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/jollof rice.jpg" alt="Jollof Rice" class="menuimage">
+        <div class="menudetails">
+          <h3>Jollof Rice</h3>
+          <p>Ignite your taste buds with this one-pot wonder</p>
+          <p><span>Price:</span> #200 per spoon</p>
+          <button class="add-to-cart" data-name="Jollof Rice" data-price="200">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="menuitem">
+        <img src="../image folder/fried rice.jpg" alt="Fried Rice" class="menuimage">
+        <div class="menudetails">
+          <h3>Fried Rice</h3>
+          <p>A flavorful fusion of stir-fried rice, vegetables, and spices</p>
+          <p><span>Price:</span> #200 per spoon</p>
+          <button class="add-to-cart" data-name="Fried Rice" data-price="200">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/jollof spag.jpg" alt="Jollof Spaghetti" class="menuimage">
+        <div class="menudetails">
+          <h3>Jollof Spaghetti</h3>
+          <p>A spicy twist on a classic favourite</p>
+          <p><span>Price:</span> #200 per spoon</p>
+          <button class="add-to-cart" data-name="Jollof Spaghetti" data-price="200">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/ofada rice.jpg" alt="Ofada Rice" class="menuimage">
+        <div class="menudetails">
+          <h3>Ofada Rice</h3>
+          <p>Experience the authentic taste of Nigeria with this traditional rice dish</p>
+          <p><span>Price:</span> #250 per spoon</p>
+          <button class="add-to-cart" data-name="Ofada Rice" data-price="250">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/amala.jpg" alt="Amala" class="menuimage">
+        <div class="menudetails">
+          <h3>Amala</h3>
+          <p>Traditional Nigerian swallow made from yam flour served with your favourite soup</p>
+          <p><span>Price:</span> #200 per wrap</p>
+          <button class="add-to-cart" data-name="Amala" data-price="200">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/eba.jpg" alt="Eba" class="menuimage">
+        <div class="menudetails">
+          <h3>Eba</h3>
+          <p>Freshly prepared from cassava flour, perfect for scooping up your favourite stew</p>
+          <p><span>Price:</span> #200 per wrap</p>
+          <button class="add-to-cart" data-name="Eba" data-price="200">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/pounded yam.jpg" alt="Pounded Yam" class="menuimage">
+        <div class="menudetails">
+          <h3>Pounded Yam</h3>
+          <p>The ultimate comfort food, made from boiled and pounded yam</p>
+          <p><span>Price:</span> #200 per wrap</p>
+          <button class="add-to-cart" data-name="Pounded Yam" data-price="200">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/egg sauce.jpg" alt="Egg Sauce" class="menuimage">
+        <div class="menudetails">
+          <h3>Egg Sauce</h3>
+          <p>Simple, yet satisfying, made from fresh eggs and aromatic spices</p>
+          <p><span>Price:</span> #200 per spoon</p>
+          <button class="add-to-cart" data-name="Egg Sauce" data-price="200">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/ofada sauce.jpg" alt="Ofada Sauce" class="menuimage">
+        <div class="menudetails">
+          <h3>Ofada Sauce</h3>
+          <p>A spicy stew that will leave you craving for more</p>
+          <p><span>Price:</span> #250 per wrap</p>
+          <button class="add-to-cart" data-name="Ofada Sauce" data-price="250">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/ewdu and gbegiri.jpg" alt="Ewedu and Gbegiri" class="menuimage">
+        <div class="menudetails">
+          <h3>Ewedu and Gbegiri</h3>
+          <p>A traditional Nigerian soup made with ewedu leaves and beans, packed with nutrients</p>
+          <p><span>Price:</span> Complimentary</p>
+          <button class="add-to-cart" data-name="Ewedu and Gbegiri" data-price="0">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/okro.jpg" alt="Okro Soup" class="menuimage">
+        <div class="menudetails">
+          <h3>Okro Soup</h3>
+          <p>A refreshing and healthy soup made with okro, served with your favourite swallow</p>
+          <p><span>Price:</span> Complimentary</p>
+          <button class="add-to-cart" data-name="Okro Soup" data-price="0">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/efo riro.jpg" alt="Efo Riro" class="menuimage">
+        <div class="menudetails">
+          <h3>Efo Riro</h3>
+          <p>A flavorful leafy green soup made with a variety of vegetables and spices</p>
+          <p><span>Price:</span> #200 per spoon</p>
+          <button class="add-to-cart" data-name="Efo Riro" data-price="200">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/moimoi.jpg" alt="Moi Moi" class="menuimage">
+        <div class="menudetails">
+          <h3>Moi Moi</h3>
+          <p>Steamed to perfection, these beans puddings are a delight to eat</p>
+          <p><span>Price:</span> #250 per wrap</p>
+          <button class="add-to-cart" data-name="Moi Moi" data-price="250">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/coleslaw.jpg" alt="ColeSlaw" class="menuimage">
+        <div class="menudetails">
+          <h3>ColeSlaw</h3>
+          <p>A crunchy and refreshing salad made with cabbage, carrots, and a hint of mayonnaise</p>
+          <p><span>Price:</span> #150 per spoon</p>
+          <button class="add-to-cart" data-name="ColeSlaw" data-price="150">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/sausage.jpg" alt="Sausage" class="menuimage">
+        <div class="menudetails">
+          <h3>Sausage</h3>
+          <p>Grilled to perfection, served with a side of peppers and onions</p>
+          <p><span>Price:</span> #300 per piece</p>
+          <button class="add-to-cart" data-name="Sausage" data-price="300">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/plantain.jpg" alt="Plantain" class="menuimage">
+        <div class="menudetails">
+          <h3>Plantain</h3>
+          <p>When fried, these plantains make a delicious side dish</p>
+          <p><span>Price:</span> 3 for #100</p>
+          <button class="add-to-cart" data-name="Plantain" data-price="100">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/beef.jpg" alt="Beef" class="menuimage">
+        <div class="menudetails">
+          <h3>Beef</h3>
+          <p>Tender, juicy, and grilled to perfection</p>
+          <p><span>Price:</span> #200 per piece</p>
+          <button class="add-to-cart" data-name="Beef" data-price="200">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/ponmo.jpg" alt="Ponmo" class="menuimage">
+        <div class="menudetails">
+          <h3>Ponmo</h3>
+          <p>Crispy fried cowhide, perfect for snacking</p>
+          <p><span>Price:</span> #200 per piece</p>
+          <button class="add-to-cart" data-name="Ponmo" data-price="200">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/chicken.jpg" alt="Chicken" class="menuimage">
+        <div class="menudetails">
+          <h3>Chicken</h3>
+          <p>Grilled or Fried, our Chicken is always a people pleaser</p>
+          <p><span>Price:</span> #2000 per piece</p>
+          <button class="add-to-cart" data-name="Chicken" data-price="2000">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/eggs.jpg" alt="Egg" class="menuimage">
+        <div class="menudetails">
+          <h3>Egg</h3>
+          <p>Simple, yet satisfying</p>
+          <p><span>Price:</span> #250 for 1</p>
+          <button class="add-to-cart" data-name="Egg" data-price="250">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/fish.jpg" alt="Fish" class="menuimage">
+        <div class="menudetails">
+          <h3>Fish</h3>
+          <p>Our fish is grilled or fried to perfection</p>
+          <p><span>Price:</span> #500 per piece</p>
+          <button class="add-to-cart" data-name="Fish" data-price="500">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/doughnut.jpg" alt="Doughnut" class="menuimage">
+        <div class="menudetails">
+          <h3>Doughnut</h3>
+          <p>Sweet, fluffy and utterly irresistible</p>
+          <p><span>Price:</span> #400 per piece</p>
+          <button class="add-to-cart" data-name="Doughnut" data-price="400">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/meat pie.jpg" alt="Meat Pie" class="menuimage">
+        <div class="menudetails">
+          <h3>Meat Pie</h3>
+          <p>A savory delight packed with beef and spices</p>
+          <p><span>Price:</span> #500 per piece</p>
+          <button class="add-to-cart" data-name="Meat Pie" data-price="500">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="../image folder/puff-puff.jpg" alt="Puff-Puff" class="menuimage">
+        <div class="menudetails">
+          <h3>Puff-Puff</h3>
+          <p>Crunchy on the outside, soft on the inside, these fried dough balls are addictive</p>
+          <p><span>Price:</span> #100 per piece</p>
+          <button class="add-to-cart" data-name="Puff-Puff" data-price="100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Double Portion Cafeteria All Rights Reserved</p>
+  </footer>
+
+  <script src="../javascript folder/script.js"></script>
+</body>
+</html>

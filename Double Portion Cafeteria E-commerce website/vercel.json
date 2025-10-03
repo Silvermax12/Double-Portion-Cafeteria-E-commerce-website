@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/HTML Folder/homepage.html"
+    },
+    {
+      "source": "/menu",
+      "destination": "/HTML Folder/menu.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/HTML Folder/about.html"
+    },
+    {
+      "source": "/cart",
+      "destination": "/HTML Folder/cart.html"
+    }
+  ]
+}
